@@ -138,7 +138,7 @@ st.plotly_chart(Grafico_agrupa_datas2,use_container_width=True)
 
 # Agente
 
-agrupa_agentes2 = df2.groupby('Responsável').sum()
+agrupa_agentes2 = df2.groupby('Solicitante').sum()
 agrupa_agentes2
 
 Grafico_agrupa_responsavel2 = px.bar(agrupa_agentes2,x=agrupa_agentes2.index,y='Valor do Estorno',orientation="v",title="<b>Estornos</b>")
