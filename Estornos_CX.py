@@ -93,9 +93,10 @@ except Exception as e:
 	print(e)
 
 # processo para poder efetuar operações matematicas com o horario
-# df2['Valor do Estorno'] = df2['Valor do Estorno'].astype(str)
-df2['Valor do Estorno'] = df2['Valor do Estorno'].str[3:]
+df2['Valor do Estorno'] = df2['Valor do Estorno'].astype(str)
 df2['Valor do Estorno'] = df2['Valor do Estorno'].str.replace(r',', '.')
+df2['Valor do Estorno'] = df2['Valor do Estorno'].str[3:]
+
 df2
 df2['Valor do Estorno'] = df2['Valor do Estorno'].astype(float)
 
